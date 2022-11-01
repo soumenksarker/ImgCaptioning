@@ -64,11 +64,11 @@ print("RESNET MODEL LOADED")
 def load_image(img):
 	im = Image.open(img)
 	return im
-activities = ["Detection","About"]
+activities = ["generate_caption","About"]
 choice = st.sidebar.selectbox("Select Activty",activities)
 uploaded_photo = c2.file_uploader("Upload Image",type=['jpg','png','jpeg'], on_change=change_photo_state)
 camera_photo = c2.camera_input("Take a photo", on_change=change_photo_state)
-if choice == 'Detection':
+if choice == 'generate_caption':
     st.subheader("Face Detection") 
     if st.session_state["photo"]=="done":
         if uploaded_photo:
