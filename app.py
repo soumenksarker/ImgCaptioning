@@ -100,4 +100,4 @@ if choice == 'Detection':
             if sampled_word == 'endofseq':
                 break
             text_inp.append(sampled_word)
-        st.success(caption[:-1])
+        st.success(caption[:-8])
