@@ -69,7 +69,7 @@ choice = st.sidebar.selectbox("Select Activty",activities)
 camera_photo = c2.camera_input("Take a photo", on_change=change_photo_state)
 uploaded_photo = c2.file_uploader("Upload Image",type=['jpg','png','jpeg'], on_change=change_photo_state)
 if choice == 'generate_caption':
-    st.subheader("Face Detection") 
+    st.subheader("to see what's going on!") 
     if st.session_state["photo"]=="done":
         if uploaded_photo:
             our_image= load_image(uploaded_photo)
